@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<form>
+<h1>Missing Cat!!</h1>
+<br/>
+<img src="jorah.jpg" alt="jorah" width="300" height="430">
+
+<p>Please tell me some information about seeing my cat, Jorah.</p>
+<form>
+  <fieldset>
+    <legend>Information:</legend>
+First name:
+<input type="text" name="firstname">
+<br/>
+<br/>
+Last name:
+<input type="text" name="lastname">
+<br/>
+<br/>
+
+Email:
+<input type="text" name="Email">
+<form>
+<p>Did you see Jorah?</p>
+<input type="radio" name="yes" value="yes" checked>Yes
+<br>
+<input type="radio" name="no" value="no">No
+</form>
+<br/>
+<br/>
+<form>
+  Date seen:
+  <input type="date" name="date seen">
+</form>
+<br/>
+What time of day was it?:
+<select>
+  <option value="morning">Morning</option>
+  <option value="noon">Noon</option>
+  <option value="night">Night</option>
+</select>
+<br/>
+<br/>
+Location seen:<br>
+<textarea name="message" rows="4" cols="30">
+
+</textarea>
+<br/>
+Any other comments:<br>
+<textarea name="message" rows="10" cols="30">
+
+</textarea>
+
+ </fieldset>
+</form>
+	<html>
