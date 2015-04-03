@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Search</title>
+</head>
+<body>
+
+<form id="search-form" method="get" action="search.php">
+	Search: <input type="text" name="q" />
+	<input type="submit" name="search" value="Go" />
+</form>
+<div id="results">
+</div>
+<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+<script type="text/javascript">
+	$('input[name="search"]').click(function(e){
+		e.preventDefault();
+		$.ajax({
+			url: 'search.php',
+			data: $("#search-form").serialize(),
+			success: function(data){
+				$('#results').html(data);
+			}
+		});
+	});
+</script>
+</body>
+</html>
